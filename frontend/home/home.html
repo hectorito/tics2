@@ -1,0 +1,34 @@
+<div class="home">
+  <div class="jumbotron centered">
+    <h1>EL MENU PRINCIPAL debe ser acsequible de cualquier punto</h1>
+    <h2>Se pregunta a la base de datos la existencia y cohincidencia de las credenciales</h2>
+    <h3>la API retorna un token para poder conservar la comunicación de forma segura</h3>
+    <h2 ng-show="jwt">Tu JWT (Json web tokens) es:</h2>
+
+    <pre ng-show="jwt" class="jwt"><code>{{jwt}}</code></pre>
+
+    <h3>Ubicacion //backend/user-routes.js</h3>
+
+    <pre ng-show="jwt" class="jwt"><code>{{decodedJwt | json}}</code></pre>
+
+
+
+    <p>Ver donde llama a la API and Toma la respuesta***</p>
+    <p><a class="btn btn-primary btn-lg" role="button" ng-click="callAnonymousApi()">Llamada Anónima API</a></p>
+    <p><a class="btn btn-primary btn-lg" role="button" ng-click="callSecuredApi()">Llamada Segura a API</a></p>
+    
+*/respuesta de uno de los dos click: */
+    <h2 ng-show="response">La respuesta de la llamada 
+    <span class="red">{{api}}
+    </span> a la API es:   </h2>
+
+    <h3 ng-show="response">{{response}}</h3>
+  </div>
+
+<p>Ver donde llama a la API and Toma la respuesta***</p>
+    <p><a class="btn btn-primary btn-lg" role="button" ng-click="newsend()">Fletame este pls</a></p>  
+<a ui-sref="newsend()">Click Aquí para Enviar</a>
+
+
+
+</div>

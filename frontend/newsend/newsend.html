@@ -1,0 +1,58 @@
+
+<div class="signup center-block jumbotron">
+  <form role="form">
+  <h1>Generar nuevo Envio</h1>
+
+
+  <div class="animate-switch-container" ng-switch on="selection">
+      <div class="animate-switch" ng-switch-when="settings|options" ng-switch-when-separator="|">Settings Div</div>
+      <div class="animate-switch" ng-switch-when="open">Flete abierto</div>
+      <div class="animate-switch" ng-switch-default>Flete mediante cotización</div>
+  
+
+
+
+  <label>Subasta Abierta:
+    <input type="checkbox" ng-model="checkboxModel.value1">
+  </label><br/>
+  <label>Envio Privado de cotización:
+    <input type="checkbox" ng-model="checkboxModel.value2"
+           ng-true-value="'YES'" ng-false-value="'NO'">
+   </label><br/>
+
+  <div class="form-group">
+    <label for="newsend">Newsend</label>
+    <input type="text" class="form-control" id="newsend" ng-model="user.newsend" placeholder="New send">
+  </div>
+
+  <div class="form-group">
+    <label for="caracteristicaUno">CaracteristicaUno</label>
+    <input type="caracteristicaUno" class="form-control" id="caracteristicaUno" ng-model="user.caracteristicaUno" placeholder="Caracteristica Uno">
+  </div>
+
+
+
+
+  <div class="form-group">
+    <label for="caracteristicaDos">Caracteristicas</label>
+    <input type="text" class="form-control" id="caracteristicaDos" ng-model="user.caracteristicaDos" placeholder="Mas información">
+  </div>
+
+    <div><a ui-sref="home()">Click Aquí NO para Enviar</a></div>
+
+
+  <button type="submit" class="btn btn-default" ng-click="createNewSend()">Fletar</button>
+
+
+
+</form>
+
+</div>
+
+
+
+  </div>
+
+
+
+
